@@ -11,7 +11,10 @@ import Proposal from './Components/Proposal/Proposal'
 import FormManagementDashboard from './Components/FromManagementModule/FormManagementDashboard';
 import CreateTemplateData from './Components/FromManagementModule/CreateTemplateData';
 import CreateTemplateDataPreview from './Components/FromManagementModule/CreateTemplateDataPreview';
-import ReferenceItem from './Components/Proposal/ReferenceItem'
+import ReferenceItem from './Components/Proposal/ReferenceItem';
+import CreateProposalData from './Components/Proposal/CreateProposal';
+import ControlledTabsExample from './Components/Proposal/Proposal';
+import ProposalData from './Components/Proposal/ProposalData';
 
 //Test Page
 import TestPage from './Components/Proposal/TestTab'
@@ -50,11 +53,14 @@ function App() {
               <Route exact path="/" element={<Navigate to='/dashboard' replace={true} />} />
               <Route exact path="/login" element={<Navigate to='/dashboard' replace={true} />} />
               <Route exact path="*" element={<PageNotFound />} />
-              <Route path="/form-management" element={<Proposal />} />
+              <Route path="/proposal-engineering" element={<Proposal />} />
               <Route path='/FormManagementDashboard' element={<FormManagementDashboard />}></Route>
               <Route path='/CreateTemplateData' element={<CreateTemplateData />}></Route>
               <Route path='/CreateTemplateDataPreview' element={<CreateTemplateDataPreview />}></Route>
               <Route path="/reference-item" element={<ReferenceItem />} />
+              <Route path='/create-proposal-data' element={<CreateProposalData />}></Route>
+              <Route path='/proposal-data' element={<ProposalData />}></Route>
+			        <Route path='/controlled-tabs-example' element={<ControlledTabsExample />}></Route>
               <Route path="/test-page" element={<TestPage />} />
             
             </Routes>

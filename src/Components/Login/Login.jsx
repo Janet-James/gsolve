@@ -127,7 +127,7 @@ function LoginForm() {
         <div className='login-wrapper px-4 px-md-0'>
             <Row className=' full-height justify-content-center  login-block'>
                 <Col md={6} className="login-details">
-                    <h1 className="client-title mb-4">G-Progress</h1>
+                    <h1 className="client-title mb-4">GSolve</h1>
                     <p className="mt-10 mb-4">We, GREEN, endeavor to be of value rather than just a success. As a provider of energy engineering, GREEN is delighted to introduce you to our value engineering delivery to all of our clients.</p>
 
                     <p className="mb-4">Our primary focus is to deliver customizable renewable energy solutions and services to regions lacking access to conventional energy sources, or unelectrified areas.</p>
@@ -200,7 +200,7 @@ function LoginForm() {
             style={{background : currentBg.bg}}
             >
                  <img src={currentBg.img} /> 
-                <h4><i>REEN</i> <br />Progress</h4>
+                <h4><i>REEN</i> <br />Solve</h4>
             </div>
         </div>
         <ToastContainer autoClose="1500" />

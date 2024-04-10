@@ -52,6 +52,7 @@
 body {
     background-color: #F5F5F5;
     font-family: "Raleway";
+    font-variant-numeric: lining-nums;
     counter-reset: counter;
 }
 h4 {
@@ -109,4 +110,57 @@ header .userinfo a, header .userinfo button  {
     padding: 0;
     margin: 0;
     margin-top: 24px;
+}
+.cl-green {
+    color: #23B14D;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: #303030;
+    font-family: "Raleway SemiBold";
+}
+
+.btn-green {
+	background: linear-gradient(30deg, #36dd68 0%, #dddf78 100%);
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+	font-weight: 700;
+	letter-spacing: .5px;
+	min-width: 80px;
+}
+
+.btn-green-2 {
+	background: linear-gradient(30deg, rgb(54 221 104 / 20%) 0%, rgb(221 223 120 / 20%) 100%);
+	padding: 10px 15px;
+	color: #23b14d;
+	font-size: 14px;
+	border: 0;
+	font-weight: 700;
+	letter-spacing: .5px;
+	min-width: 80px;
+}
+
+.btn-green-3 {
+	background-color: #23b14d;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+	font-weight: 700;
+	letter-spacing: .5px;
+	min-width: 80px;
+}
+.error-msg {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #d30202;
+    padding-top: 5px;
+}
+.boxShadow{
+    box-shadow: 0 4px 9px 0 #00000026;
+    border-radius: 5px;
 }

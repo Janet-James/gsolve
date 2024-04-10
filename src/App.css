@@ -159,6 +159,9 @@
   box-shadow: none;
   color: #303030;
 }
+.accordion-wrap .accordion-item .accordion-item:last-child {
+  margin-bottom: 0px;
+}
 .accordion-button{
   background:#F8F8F8;
   font-size: 20px;
@@ -655,6 +658,7 @@ select option {
 }
 .building-images {
   border: 1px solid #D6D6D6;
+  margin-bottom: 60px;
 }
 .building-images .top-tab {
   width: 100%;
@@ -678,7 +682,8 @@ select option {
 .building-images .top-tab ul li:last-child {
   border-right: 0px;
 }
-.building-images .top-tab ul li.active {
+.building-images .top-tab ul li.active,
+.building-images .top-tab ul li.active select {
   color: #23B14D;
 }
 .building-images .top-tab ul li select {
@@ -689,6 +694,9 @@ select option {
   background-position: 100% 55%;
   margin: 0px;
   padding: 0px;
+}
+.building-images .top-tab ul li select option {
+  color: #3C4242;
 }
 .building-tab-content {
   width: 100%;
@@ -722,17 +730,20 @@ select option {
 .building-tab-content  {
   padding: 0 22px;
 }
-.building-tab-content .upload-wrap {
+.upload-wrap {
   position: relative;
+  text-align: right;
 }
-.inner-content-item input[type="file"]{
-  position: relative;
+.upload-wrap input[type="file"]{
+  position: absolute;
   opacity: 0;
   width: 110px;
-  height: 28px;
+  height: 36px;
+  top: 0px;
+  right: 0px;
 }
-.inner-content-item input[type="file"] + label{
-  border: 1px dashed rgba(0,0,0,0.4);
+.upload-wrap input[type="file"] + label{
+  border: 1px dashed rgba(0,0,0,0.2);
   font-size: 13px;
   color: #23B14D;
   padding: 7px 20px;
@@ -740,8 +751,12 @@ select option {
   font-family: "Raleway SemiBold";
   position: relative;
   cursor: pointer;
+  width: 110px;
+  display: inline;
+
+
 }
-.inner-content-item input[type="file"] + label:before{
+.upload-wrap input[type="file"] + label:before{
   background:url('./dist/images/site-assessment/upload-icon.svg');
   content: '';
   width: 20px;
@@ -749,4 +764,87 @@ select option {
   display: inline-block;
   margin-right: 5px;
   vertical-align: middle;
+}
+.animate-width{
+  overflow: hidden;
+  position: relative;
+}
+.animate-width > div:not(.building-images-arrow) {
+  transition: width 0.5s ease;
+  margin-right: -40%;
+  position: relative;
+}
+.animate-width .col-12 {
+  padding-right: 100px;
+}
+.animate-width .col-4 {
+  margin-right: 0px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 9px;
+  margin-left: auto;
+}
+.animate-width .col-0 {
+  width: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+  white-space: nowrap;
+}
+.animate-width .col-0 .building-images {
+  opacity: 0;
+}
+.building-images-arrow{
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  text-align: center;
+  z-index: 9;
+  width: auto;
+}
+.building-images-arrow button {
+  width: 42px;
+  text-align: center;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.building-images-arrow button:after{
+  width: 24px;
+  height: 26px;
+  background: url('dist/images/site-assessment/left-arrow-green.svg') 0 0 no-repeat;
+  display: block;
+  content: '';
+  margin: 20px auto 0;
+}
+.building-images-arrow span {
+  display: block;
+  text-align: center;
+  font-family: "Raleway SemiBold";
+  font-size: 13px;
+  color: #23B14D;
+  margin-top: 5px;
+}
+.hide-building-image {
+  width: 24px;
+  height: 26px;
+  background: url('dist/images/site-assessment/sidebar-arrow-before.svg');
+  display: block;
+  border: 0px;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  cursor: pointer;
+}
+.equipment-table th {
+  background-color: rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-family: "Raleway SemiBold";
+}
+.equipment-table td, .equipment-table th {
+  border: 1px solid #D6D6D6;
+  padding: 10px;
+  text-align: center;
 }

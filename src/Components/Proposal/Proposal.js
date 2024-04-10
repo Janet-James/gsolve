@@ -33,7 +33,7 @@ function ControlledTabsExample() {
                     top: 0,
                     behavior: "smooth"
                 });
-
+                console.log(key);
             }, 50);
         }
     

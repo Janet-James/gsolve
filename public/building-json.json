@@ -12,7 +12,7 @@
          "room_details":[
             {
              "room_1":{
-                 "room_functional_name":"testing",
+                 "room_functional_name":"testing room1 ",
                  "room_type":"storage_room",
                  "add_new_equipment":"solar bulb",
                  "equipment":[
@@ -27,20 +27,20 @@
                      {
                         "equipment_name":"monitor",
                         "equipment_type":"led",
-                        "wattage":"77w",
+                        "wattage":"78w",
                         "quantity":"3",
                         "operating_hours":"6hrs",
                         "wattage_summary":"Lorem ipsum is a placeholder text"
                      }
                  ]
-             }
+                }
             },
             {
              "room_2":{
                  "room_functional_name":"testing",
                  "room_type":"electrical_room",
                  "add_new_equipment":"solar fan",
-                 "equipments":[
+                 "equipment":[
                      {
                         "equipment_name":"tv",
                         "equipment_type":"led",
@@ -77,80 +77,66 @@
             "scaffolding_during_installation":"yes",
             "scaffolding_details":"Lorem ipsum is a placeholder text"
          },
-         "images":{
-            "building_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+         "building_and_roof_images": {
+            "building": {
+                "images": {
+                    "building_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "building_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "building_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "building_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             },
-            "room_1_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+            "room": [{
+            "room_1_images": {
+                "images": {
+                    "room_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "room_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "room_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "room_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             },
-            "room_2_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
-            },
-            "roof_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+            "room_2_images": {
+                "images": {
+                    "room_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "room_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "room_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "room_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             }
-         }
+            }],
+            "roof": {
+                "images": {
+                    "roof_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "roof_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "roof_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "roof_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
+            }
+        }
      },
      {
          "building_2":{
@@ -167,7 +153,7 @@
                  "room_functional_name":"testing",
                  "room_type":"storage_room",
                  "add_new_equipment":"solar bulb",
-                 "equipments":[
+                 "equipment":[
                      {
                         "equipment_name":"tv",
                         "equipment_type":"led",
@@ -229,80 +215,66 @@
             "scaffolding_during_installation":"yes",
             "scaffolding_details":"Lorem ipsum is a placeholder text"
          },
-         "images":{
-            "building_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+         "building_and_roof_images": {
+            "buildings": {
+                "images": {
+                    "building_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "building_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "building_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "building_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             },
-            "room_1_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+            "room": [{
+            "room_1_images": {
+                "images": {
+                    "room_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "room_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "room_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "room_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             },
-            "room_2_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
-            },
-            "roof_images":{
-             "images":{
-                 "image_1":"image_one_link",
-                 "image_2":"image_two_link"
-             },
-             "videos":{
-                 "video_1":"video_one_link",
-                 "video_2":"video_two_link"
-             },
-             "drawings":{
-                 "drawing_1":"drawing_one_link",
-                 "drawing_2":"drawing_two_link"
-             },
-             "raw_images":{
-                 "raw_image_1":"raw_image_one_link",
-                 "raw_image_2":"raw_image_two_link"
-             }
+            "room_2_images": {
+                "images": {
+                    "room_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "room_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "room_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "room_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
             }
-         }
+            }],
+            "roof": {
+                "images": {
+                    "roof_images": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "videos": {
+                    "roof_videos": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "drawings": {
+                 "roof_drawings": ["image_1", "image_2", "image_3", "image_4"]
+                },
+                "raw_images": {
+                    "roof_raw_images": ["image_1", "image_2", "image_3", "image_4"]
+                }
+            }
+        }
      }
 ]
 }
